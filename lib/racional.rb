@@ -55,23 +55,23 @@ class Racional
   end
   
   def +(o)
-    Racional.new(num*o.denom+o.num*denom,denom*o.denom).mostrar_fraccion
+    Racional.new(num*o.denom+o.num*denom,denom*o.denom)
   end
   
   def -(o)
-    Racional.new(num*o.denom-o.num*denom,denom*o.denom).mostrar_fraccion
+    Racional.new(num*o.denom-o.num*denom,denom*o.denom)
   end
   
   def *(o)
-    Racional.new(num*o.num,denom*o.denom).mostrar_fraccion
+    Racional.new(num*o.num,denom*o.denom)
   end
   
   def /(o)
-    Racional.new(num*o.denom,denom*o.num).mostrar_fraccion
+    Racional.new(num*o.denom,denom*o.num)
   end
   
   def %(o)
-    Racional.new(num%denom, o.num%o.denom).mostrar_fraccion
+    Racional.new(num%denom, o.num%o.denom)
   end
   
   def <=>(o)
