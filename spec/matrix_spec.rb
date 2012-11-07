@@ -19,10 +19,10 @@ describe Matrix do
   it "Se debe poder sumar dos matrices de racionales" do
     (@m1_rac+@m2_rac).formato_racional.should == "[[2/1, 3/1], [4/1, 2/1]]"
   end
-#   
-#   it "Se debe poder multiplicar una matriz de Enteros" do
-#     (@m1_ent*@m2_ent).matrix.inspect.should == "[[3, 6, 9], [12, 15, 18]]"
-#   end
+  
+  it "Se debe poder multiplicar una matriz de Enteros" do
+    (@m1_ent*@m2_ent).matrix.inspect.should == "[[3, 6, 9], [12, 15, 18]]"
+  end
 #   
 #   it "Se debe poder multiplicar dos matrices de Racionales" do
 #     (@m1_rac*@m2_rac).inspect.should == "[[3/4, 9/4], [15/4, 3/4]]"

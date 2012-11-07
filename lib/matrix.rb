@@ -95,23 +95,23 @@ class Matrix
       Matrix.new(mat)
   end
   
-#     def *(o)
-#     raise unless (o.is_a? Matrix) and (filas == o.filas) and (columnas == o.columnas)
-#       mat = []
-#       fil = col = 0
-#       while fil < filas
-# 	while col < columnas
-# 	  if col == 0
-# 	    mat << [matrix[fil][col] * o.matrix[fil][col]]
-# 	  else
-# 	    mat[fil] << (matrix[fil][col] * o.matrix[fil][col])
-# 	  end
-# 	  col += 1
-# 	end
-# 	fil += 1
-# 	col = 0
-#       end
-#       Matrix.new(mat)
-#   end
+    def *(o)
+    raise unless (o.is_a? Matrix) and (filas == o.filas) and (columnas == o.columnas)
+      mat = []
+      fil = col = 0
+      while fil < filas
+	while col < columnas
+	  if col == 0
+	    mat << [matrix[fil][col] * o.matrix[fil][col]]
+	  else
+	    mat[fil] << (matrix[fil][col] * o.matrix[fil][col])
+	  end
+	  col += 1
+	end
+	fil += 1
+	col = 0
+      end
+      Matrix.new(mat)
+  end
   
 end
